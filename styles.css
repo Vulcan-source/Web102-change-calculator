@@ -4,7 +4,10 @@ body {margin: 0; font-family: system-ui, sans-serif; background: var(--bg); colo
 header {background:var(--green); color:#fff; padding: 1.25rem; text-align:center; }
 header h1 { margin:0; font-size:1.6rem; }
 main {max-width: 900px; margin:2rem auto; padding:0 1rem; display:grid; gap:1.5rem; grid-template-columns:1fr 1.4fr; }
-@media(max-width:700px){main { grid-template-columns:1fr; } }
+@media(max-width:700px){
+    main { grid-template-columns:1fr; margin:1rem auto; }
+.card { padding:1rem; }
+}
 .card { background: var(--card); border-radius: 12px; padding:1.5rem; box-shadow:0 2px 8px rgba(0,0,0,.08); }
 .card h2 {margin-top: 0; color: var(--dark); }
 label { display: block; margin:1rem 0 .35rem; font-weight: 600; }
@@ -16,7 +19,7 @@ button:hover { background:var(--dark); }
 button:active { transform: scale(.98); }
 #message {min-height: 1.4em; font-weight: 600; color:var(--dark); }
 #message.error { color:var(--red);}
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(120px, 1fr)); gap:1rem; }
+.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(100px, 1fr)); gap:1rem; }
 .coin {text-align: center; background: var(--bg); border-radius: 10px; padding:1rem .5rem; }
 .coin .label { display:block; font-size:.9rem; color:#555;}
 .coin .value { display:block; font-size:2.2rem; font-weight:800; color:var(--green); }
